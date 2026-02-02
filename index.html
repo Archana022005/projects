@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content= 
+      "width=device-width, initial-scale=1.0"> <head>
+      <body bgcolor="gray"> 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    body {
+      font-family: "TimesNewRoman", Serif; 
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: orange;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+   .image img{
+  height: 100%;
+  width: 100%;
+   }
+
+   .image{
+    position: relative;
+   }
+   .image figcaption{
+    position : absolute;
+    top: 30%;
+    bottom: 10%;
+    left: 50%;
+   }
+      .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family:"Times New Roman", Serif; 
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: blue;
+      padding: 35px 20px;
+    }
+
+    /* CSS for main element */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      align-items: right;
+      width: 50%;
+      height: 50px;
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family:"Times New Roman", Serif; 
+      font-size: 60px;
+      
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: right;
+      padding: 40px 80px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+/* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">Hospital</a>
+    <nav class="nav-items">
+      <a href="#">Home</a>
+      <a href="about.php">About</a>
+      <a href="contact.php">Contact</a>
+    </nav>
+   </header>
+  
+  <main>
+  <figure class="image">
+     <img src='uploads/img4.jpeg' alt="background">
+    <div class="intro"><figcaption><h1>ATLANTIC RCM</h1><h2> pvt</h2><h1> MEDICAL BILLING</h2></figcaption>
+    </div>
+
+
+    <div class="achievements">
+      <div class="work">
+    <a href="add_patient.php"><button id="a"><h2>Demography form</h2></button></a>
+    </div>
+
+
+      <div class="work">
+      <a href="insurance.php"><button id="a"><h2>Insurance</h2></button></a> 
+
+      </div>
+
+
+      <div class="work">
+      <a href="payment.php"><button id="a"><h2>Payment</h2></button></a> 
+      </div>
+    
+      <div class="work">
+      <a href="view_patients.php"><button id="a"><h2>patient details</h2></button></a> 
+      </div>
+    
+  </main>
+<footer class="footer">
+  <div class="copy">&copy; 2024 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span><br>
+        <a href="#">Home</a>
+        <a href="about.php">About</a>
+        <a href="contact.php">Contact</a>
+      </div>
+  </footer>
+</body>
+</html>
+    
